@@ -6,7 +6,7 @@ import 'package:cinemapedia/domain/entities/movie.dart';
 abstract class MoviesRepository {
 
 
-// Reguresa las peliculas que estan actulamente en cartelera --- Solo implementamos
+// Reguresa las peliculas que estan actulamente en cartelera --- Solo definimos
 // Será una lista que a futuro me regrese una movi, por parametro será siempre paginado 
 Future<List<Movie>> getNowPlaying ( { int page = 1 } );
 
