@@ -10,8 +10,8 @@ class AppTheme {
   uso de material en toda la app y un color.
 **/
   ThemeData getTheme() => ThemeData(
-    useMaterial3: true,
-    colorSchemeSeed: const Color(0xFF2862F5)
+    useMaterial3: true,colorScheme: const ColorScheme.dark()
+
   );
 
 }

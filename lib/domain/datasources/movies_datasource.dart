@@ -9,7 +9,10 @@ abstract class MoviesDatasource {
 
 
 // Regresa las peliculas que estan actulamente en cartelera --- Solo definimos el contrato
-// Será una lista que a futuro me regrese una movi, por parametro será siempre paginado 
+// Será una lista que a futuro me regrese una lista de movies, por parametro será siempre paginado 
 Future<List<Movie>> getNowPlaying ( { int page = 1 } );
+Future<List<Movie>> getPopular ( { int page = 1 } );
+Future<List<Movie>> getUpcoming ( { int page = 1 } );
+Future<List<Movie>> getTopRated ( { int page = 1 } );
 
 }
