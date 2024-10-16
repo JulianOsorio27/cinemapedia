@@ -35,8 +35,6 @@ class MovieMapNotifier extends StateNotifier<Map<String,Movie>> {
 
     if( state [movieId]  != null ) return;
 
-    print( 'Realizando peticion http' );
-
     final movie = await getMovie( movieId );
 
     state  = {...state, movieId: movie};
