@@ -18,4 +18,6 @@ Future<List<Movie>> getTopRated ( { int page = 1 } );
 // Regresa una movie por el ID
 Future<Movie> getMovieId ( String id );
 
+// Busqueda de peliculas
+Future<List<Movie>> searchMovies ( String query );
 }
